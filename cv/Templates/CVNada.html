@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Nada El Kamel</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="CVNada.css">
+
+    <!-- MDI -->
+    <link rel="stylesheet" href="cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                
+             
+                <div class="navbar-collapse collapse" id="navbar10">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li>
+                            <a class="nav-link font-weight-bold"  onclick="changeHref('')">Nada El Kamel</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link font-weight-bold" onclick="changeHref('')">Infos générales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" onclick="changeHref('competence')">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold"  onclick="changeHref('diplome-formation')">Diplomes et formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" onclick="changeHref('experience-stage')">Expériences professionnelles et stages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold"  >Configuration</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<body>
+    <script>
+        $(document).ready(function () {
+            $('.navbar-nav .nav-item').click(function () {
+                $('.navbar-nav .nav-item').removeClass('active');
+                $(this).addClass('active');
+            })
+        });
+        function changeHref(link){
+          location.href= 'http://127.0.0.1:8000/cv/'+link;
+        }
+    </script>
+    
+<div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col-6 col-sm-3">
+        
+        <h3><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVxJREFUSEvNltFRw0AMRF86IBUAFRA6gAqgBKggUEGgAugAWqACKIEOoANIB8zO2JnkOFurYMbWjz/uoqddy1JmjBSzkbjsC74ETpqi34GXrIAs+Ax4Ao4K0CdwDby5BWTAgr4Gic9duAs+AD4APftCyk+B70i5C75qLI7y6VyWP0cXXfAdsIqSNef3gO73hgt+BJZRsv8A3wAPJvgWUKGDKNbno+aKYg0sADXZIGAlcVRbapXMfcdt9X1NZjVVmygL1u9ku9TLUoVGpt5paO+29/uAo9dnnU8eLFsvGnu7xqbGZLup9PxTVwuo71cLIhPaUurwzgL6rNZ8FjRaDF0FyQHBq3O7C+ysQNeB6qqsgd0V6IKl/LhclTVwZhO58F/DpQbWIDh0M5r3lFOqN1GCZfOXmSx7bb5tdwkesqnKwnaabDJgWd0O/6yV0X0Nk82fwMnP6khN+nw0xT/GNTcfILBjUQAAAABJRU5ErkJggg=="/>Profil</i></h3>
+      </div>
+      <div class="col">
+        
+        <h3><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYBJREFUSEvNluFNwzAQhb9OAEwA3QAmADaACQoTABMAE8AGwATABnQCygTtCDAB6EWp5biX2I0dhZMq/7Drz8/ne5cJI8VkJC5DgA+AY+ClS1Rp8C6wBDTeA3dt8NLgZ2DmwabAyoKXBB8CnwHkDTgfGvxR5zbknAKaa0QpxWfAa0s+F8DRUGDlcb/jFV8Cyr+LEor1cm8jfvAN6KFprCIX7JdPzIsa5ZULDssnBnfllQv+jZGCeac6F3wB6JcSyq/WVnnOBacAzTX/AqyuorLQGAvlasONANmmvFqjQpb5bvm1rzilHtcH0mZyKz8egSvjxMrpTZeBbAOeAycepA3qn0PNQjewYSB9wVZXslIl5XslwSlq1zynum+O/atua4eWatNA+l71aOBr4CFWf/W8+rL6c8O5+ipW3WuznQj8y6vvImDx5MFPHeCfuvwqtaHiba5M38xhc5ChqE2GyqVUax00BKup688plimA+dla7+FbZgNoKU58H2WWjdad/gAtA00f98l8JwAAAABJRU5ErkJggg=="/>Centres d'intérets</i></h3>
+      </div>
+      <div class="col">
+        
+        <h3><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvtl1EuRDEYhb9ZAR49GTtAvONdiBUgNmAHWIElYAdIJvGGZ4IdYAVYATmT9qa309v23mncSDS5mUnbv6f3/Oc//8yAnsagJ1xiwFvAMvAMXLe44AEwD9wAj01xTcBHwLETpO8nGeBXgC5sxyYwCsU1AX8As07AJzCXAF4FHrw9Ymr7TwD3RrXYUa5WgKffENcQWIjk8gt4aVhfB74Da+/Amz/vimsPOMtQ7g5w6e27A9YisYs+uAusklFuU0Nl5ZaaWHpNBPkxNQPpCpzDlNIjM6pGiTc+B3ZTNBkfkB+MRwlgHTaTAbwP6JJFgJeMl2fgcgEoLUWAD4HTHFSgZrvTUp0qI/9OEtjYB6YFtmUl84jVse1suqieGrD4tzkIHXJvri+BVCIxc6k337CAoRy7tISsL/ajIbTfPS9qIF2BRfNtQmBiS/uCBtIVONfxaow10deGaulCfq3HdzB1JqsHfVZdqgSwZSpE+QTFpcWl8/6BxUJrqt1Gb9MSmnMrQeKqmoBZkJh8s5loEpleX2Zbb/+dfgCwYmMfx0bHcAAAAABJRU5ErkJggg=="/>Vie associative</i></h3>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-6 col-sm-3">
+        Etudiante en 2ème année technologie de l'infomatique filière
+        dévelopemment des systèmes d'information. 
+      </div>
+      <div class="col">
+        Musique
+      </div>
+      <div class="col">
+        Membre à Google Developer Student GDSC ISET Nabeul | <i><b>05/2022-08/2022</b></i>
+      </div>
+    </div>
+    <div class="row align-items-end">
+      <div class=" col-6 col-sm-3">
+        Motivée,je bénéficie
+        d'une expérience pratique dans la réalisation d'activités acquises au
+        cours de divers stages et formations.
+      </div>
+      <div class="col">
+        Voyage
+      </div>
+     
+      <div class="col">
+        Coodinateur logistique è Google Developer Student Club ISET
+        Nabeul | <i><b>08/2022 - présent</b></i>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
